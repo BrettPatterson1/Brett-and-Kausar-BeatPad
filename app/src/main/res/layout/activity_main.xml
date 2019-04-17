@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toStartOf="@+id/pad2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/allPads" />
 
     <Button
         android:id="@+id/pad2"
@@ -126,6 +126,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/orange_button"
+        android:onClick="pad10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/pad11"
         app:layout_constraintHorizontal_bias="0.5"
@@ -138,6 +139,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/pink_button"
+        android:onClick="pad11"
         app:layout_constraintBaseline_toBaselineOf="@+id/pad10"
         app:layout_constraintEnd_toStartOf="@+id/pad12"
         app:layout_constraintHorizontal_bias="0.5"
@@ -149,16 +151,18 @@
         android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/green_button"
+        android:onClick="pad12"
         app:layout_constraintBaseline_toBaselineOf="@+id/pad11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/pad11" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/allPads"
         android:layout_width="162dp"
         android:layout_height="52dp"
         android:layout_marginTop="56dp"
+        android:background="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
