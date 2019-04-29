@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Beat Pad</string>
 
-    <string-array name="names">
+    <string-array name="presets">
         <item>Stock1</item>
+        <item>Stock2</item>
     </string-array>
 </resources>
