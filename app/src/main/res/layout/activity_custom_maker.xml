@@ -8,7 +8,7 @@
     android:background="@color/colorPrimary"
     android:orientation="horizontal"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".CustomMaker">
 
     <Button
         android:id="@+id/pad1"
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toStartOf="@+id/pad2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/allPads" />
+        app:layout_constraintTop_toBottomOf="@+id/save" />
 
     <Button
         android:id="@+id/pad2"
@@ -146,27 +146,53 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/pad11" />
 
-    <Spinner
-        android:id="@+id/allPads"
-        android:layout_width="162dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="8dp"
-        android:background="#ffffff"
-        app:layout_constraintEnd_toStartOf="@+id/toCustom"
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="168dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:background="#ffffffff"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toStartOf="@+id/record"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toCustom"
-        android:layout_width="95dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
-        android:text="Create"
+        android:id="@+id/save"
+        android:layout_width="161dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Save"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="124dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:text="Record"
+        app:layout_constraintBottom_toTopOf="@+id/stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/allPads"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="122dp"
+        android:layout_height="65dp"
+        android:text="Stop Recording"
+        app:layout_constraintBaseline_toBaselineOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/save" />
 
 </android.support.constraint.ConstraintLayout>
